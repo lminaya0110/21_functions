@@ -1,3 +1,11 @@
+# Write a Python function to sum all the numbers in a list
+def my_sum(*args):
+    total = 0
+    for i in args:
+        total += i
+    return total
+print(f'Sum all numbers : {my_sum(3, 27, 1993)}\n') 
+
 
 # Write a Python function to find the maximum of three numbers
 
