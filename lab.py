@@ -55,5 +55,16 @@ def check_range(required, num_1, num_2):
 check_range(1, 2, 15)
  #_______________________________________________________________________
 
-  
+# Write a Python function that takes a list and returns a new list with distinct elements from the first list.
+# Sample List : [1,2,3,3,3,3,4,5]
+# Unique List : [1, 2, 3, 4, 5]
+
+def distinct_lst(*args):
+    lst = [int(i) for i in args]
+    new_set = set(lst)
+    set_to_lst = list(new_set)
+    return set_to_lst
+
+print(distinct_lst(1, 2, 2, 3, 4, 4, 5))
+ #_______________________________________________________________________
 
