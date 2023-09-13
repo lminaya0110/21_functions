@@ -30,14 +30,30 @@ print(f'Multiply all nums in list : {first_try}\n')
 # Sample String : "1234abcd"
 # Expected Output : "dcba4321"
 
-def reverse_this(my_string):
-    letters = [i for i in my_string]
-    for i in reversed(letters):
-        print(i)
-    
+def reverse_this(my_str):
 
-print(reverse_this("The cow jumped over the moon"))
+    reversed = ''
+    index = len(my_str)
+    while index > 0:
+        reversed += my_str[ index - 1 ]
+        index = index - 1
+    return reversed
+
+print("Reversed String : " + reverse_this("The cow jumped over the moon") + "\n")
 #_______________________________________________________________________
 
+# Write a Python function to check whether a number falls within a given range
 
+def check_range(required, num_1, num_2):
+    
+    lst = [i for i in range(num_1, num_2)]
+    if required in lst:
+        print(f'{required} IS in your list : {lst}')
+    else:
+        print(f'{required} is NOT in your list : {lst}\n')
+            
+check_range(1, 2, 15)
+ #_______________________________________________________________________
+
+  
 
