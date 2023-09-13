@@ -65,6 +65,18 @@ def distinct_lst(*args):
     set_to_lst = list(new_set)
     return set_to_lst
 
-print(distinct_lst(1, 2, 2, 3, 4, 4, 5))
+print(f'Distinct List : {distinct_lst(1, 2, 2, 3, 4, 4, 5)} \n')
  #_______________________________________________________________________
 
+# Write a Python program to print the even numbers from a given list.
+# Sample List : [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# Expected Result : [2, 4, 6, 8]
+
+def find_even_nums(*args):
+    even_lst = []
+    for i in args:
+        if i % 2 == 0:
+            even_lst.append(i)
+    return even_lst
+    
+print(f"Find Even Nums : {find_even_nums(1, 2, 3, 4, 5, 6)} \n")
