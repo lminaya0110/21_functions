@@ -1,3 +1,5 @@
+print(f"\t\tBasic Functions : \n")
+
 # Write a Python function to sum all the numbers in a list
 def my_sum(*args):
     total = 0
@@ -88,3 +90,38 @@ def find_even_nums(*args):
     return even_lst
     
 print(f"Find Even Nums : {find_even_nums(1, 2, 3, 4, 5, 6)} \n")
+ #_______________________________________________________________________
+
+
+print(f"\t\tLambda Functions : \n")
+
+#************* LAMBDA FUNCTIONS *************
+
+# Write a Python program to create a lambda function that adds 15 to a given number passed in as an argument, also create a lambda function that multiplies argument x with argument y and prints the result.
+# Sample Output:
+# 25
+# 48
+
+add_15 = lambda n: n + 15
+multiply = lambda x, y: x * y
+
+print(f'Add 15 : {add_15(10)}\n')
+print(f'Multiply : {multiply(6, 8)}\n')
+ #_______________________________________________________________________
+
+# Write a Python program to create a function that takes one argument, and that argument will be multiplied with an unknown given number.
+# Sample Output:
+# Double the number of 15 = 30
+# Triple the number of 15 = 45
+# Quadruple the number of 15 = 60
+# Quintuple the number 15 = 75
+def func_compute(n):
+ return lambda x : x * n
+result = func_compute(2)
+print("Double the number of 15 =", result(15))
+result = func_compute(3)
+print("Triple the number of 15 =", result(15))
+result = func_compute(4)
+print("Quadruple the number of 15 =", result(15))
+result = func_compute(5)
+print("Quintuple the number 15 =", result(15))
